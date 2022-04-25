@@ -28,5 +28,5 @@ for link in soup.find_all("img", attrs={"class": "rg_i"}):
     if num == 10:
         for i in array:
             predictor = LinearRegression(n_jobs=-1)
-            predictor.fit(x=query, y=i)
+            predictor.fit(X=query, y=i)
         exit()
